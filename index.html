@@ -328,6 +328,9 @@
   .s-rec .rec-zoom{ width:min(320px,80%); }
 }
 
+.dep .hipaa{ margin-top:14px; padding-left:14px; border-left:2px solid var(--accent); font-size:clamp(15px,1.1vw,18px); line-height:1.45; color:var(--ink-2); }
+.tl2-axis.wk span, .tl2-axis.wk span:first-child, .tl2-axis.wk span:last-child{ transform:translateX(-50%); }
+
 </style>
 </head>
 <body>
@@ -465,10 +468,10 @@
     <div>
       <div class="k">On your servers</div>
       <div class="t">Inside your perimeter.</div>
-      <div class="b">One Docker Compose package with SSO. Screenshots never reach Silow.</div>
+      <div class="b">One Docker Compose package with SSO. Your data never leaves your perimeter and never reaches Silow.</div>
+      <div class="hipaa">For medical records: everything runs on your servers, supporting your HIPAA requirements.</div>
     </div>
   </div>
-  <p class="quiet rise d3">Workflows with medical records run <b>entirely on your servers</b>, supporting your HIPAA requirements.</p>
 </section>
 <section class="s-month">
   <div class="eyebrow rise">How we start</div>
@@ -480,8 +483,8 @@
     <div class="tl2-bar setup" style="left:0;width:9%">Set up</div>
     <div class="tl2-bar rec" style="left:0;width:100%">Recording runs in the background<small>all four weeks</small></div>
     <div class="tl2-bar out" style="left:25%;width:75%">Reports · process maps · automation plan<small>updated every week</small></div>
-    <div class="tl2-bar end" style="left:76%;width:24%">Readout<small>full month</small></div>
-    <div class="tl2-axis"><span style="left:0">Week 0</span><span style="left:25%">Week 1</span><span style="left:50%">Week 2</span><span style="left:75%">Week 3</span><span style="left:100%">Week 4</span></div>
+    <div class="tl2-bar end" style="left:80%;width:20%">Readout<small>end of month</small></div>
+    <div class="tl2-axis wk"><span style="left:12.5%">Week 1</span><span style="left:37.5%">Week 2</span><span style="left:62.5%">Week 3</span><span style="left:87.5%">Week 4</span></div>
   </div>
 </section>
 <section class="dark s-layers s-iso">

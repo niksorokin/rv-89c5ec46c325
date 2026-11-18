@@ -328,6 +328,19 @@
   .s-rec .rec-zoom{ width:min(320px,80%); }
 }
 
+.s-hipaa .body{ margin:22px 0 0; max-width:620px; font-size:clamp(21px,1.85vw,29px); line-height:1.5; color:var(--mute); letter-spacing:-0.008em; }
+.s-hipaa .body b{ color:var(--ink); font-weight:500; }
+.sec-split{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(40px,4.5vw,80px); align-items:center; max-width:1420px; width:100%; text-align:left; }
+.hipaa-restored{grid-template-columns:1.1fr .9fr;}
+.hipaa-restored h2{font-size:clamp(44px,4.6vw,78px); max-width:none;}
+.hipaa-right{text-align:left;}
+.stat-num{ font-weight:400; letter-spacing:-0.04em; line-height:.95; white-space:nowrap; }
+.stat-num small{ font-size:.46em; letter-spacing:-0.02em; }
+.hipaa-right .stat-num{font-size:clamp(88px,8.4vw,152px);}
+.hipaa-label{font-size:clamp(32px,3.2vw,56px);font-weight:500;letter-spacing:-.04em;}
+.hipaa-provider{margin-top:16px;color:var(--mute);font-size:clamp(16px,1.3vw,22px);}
+.hipaa-closing{margin-top:32px;padding-top:30px;border-top:1px solid var(--line);color:var(--accent);font-size:clamp(22px,2vw,32px);font-weight:500;line-height:1.2;letter-spacing:-.03em;}
+@media (max-width:900px){ .hipaa-restored{grid-template-columns:1fr;} .hipaa-right .stat-num{font-size:76px;} .s-hipaa{ padding:12vh 22px 6vh; } }
 .dep .hipaa{ margin-top:14px; padding-left:14px; border-left:2px solid var(--accent); font-size:clamp(15px,1.1vw,18px); line-height:1.45; color:var(--ink-2); }
 .tl2-axis.wk span, .tl2-axis.wk span:first-child, .tl2-axis.wk span:last-child{ transform:translateX(-50%); }
 
@@ -456,6 +469,21 @@
   </div>
   <p class="quiet rise d3">Leadership sees company and team reports, managers their own teams. <b>Names are anonymous by default.</b></p>
 </section>
+<section class="s-hipaa">
+    <div class="sec-split hipaa-restored">
+      <div>
+        <div class="eyebrow rise">Deployed in a customer environment</div>
+        <h2 class="rise d1">HIPAA compliance?<br><em>Solved.</em></h2>
+        <p class="body rise d2">Silow maps workflows involving medical records. It runs <b>entirely on the customer’s servers</b>, supporting the customer’s HIPAA compliance requirements.</p>
+      </div>
+      <div class="hipaa-right rise d3">
+        <div class="stat-num">100<small>%</small></div>
+        <div class="hipaa-label">On-premises.</div>
+        <div class="hipaa-provider">With the customer’s chosen model provider.</div>
+        <div class="hipaa-closing">Secure deployment.<br>Your infrastructure. Your control.</div>
+      </div>
+    </div>
+  </section>
 <section class="s-dep">
   <div class="eyebrow rise">Deployment</div>
   <h2 class="rise d1">Our servers <em>or yours.</em></h2>
@@ -469,7 +497,6 @@
       <div class="k">On your servers</div>
       <div class="t">Inside your perimeter.</div>
       <div class="b">One Docker Compose package with SSO. Your data never leaves your perimeter and never reaches Silow.</div>
-      <div class="hipaa">For medical records: everything runs on your servers, supporting your HIPAA requirements.</div>
     </div>
   </div>
 </section>
